@@ -5,7 +5,7 @@
     <div class="todoBody">
 
 
-    <h1>This is create Form page</h1>
+    <h1>Create Todo</h1>
 
     {!! Form::open(['action' => 'TodosController@store']) !!}
         {{ Form::bsText('title') }}
@@ -13,6 +13,7 @@
         {{ Form::bsText('due') }}
         {{ Form::bsSubmit('Submit', ['class'=>'btn btn-primary'] ) }}
     {!! Form::close() !!}
+
 
 
 @endsection

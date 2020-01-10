@@ -10,7 +10,13 @@
 </head>
 <body>
 
+
+
     @include('inc.navbar')
+
+    <br>
+
+    @include('inc.errorhandle')
 
     <div class="container" >
         @yield('content')
