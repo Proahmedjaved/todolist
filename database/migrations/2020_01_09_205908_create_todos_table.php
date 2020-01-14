@@ -17,7 +17,7 @@ class CreateTodosTable extends Migration
             $table->bigIncrements('id');
             $table->string('title');
             $table->mediumText('body')->nullable();
-            $table->string('due')->nullable();
+            $table->string('due');
             $table->timestamps();
         });
     }

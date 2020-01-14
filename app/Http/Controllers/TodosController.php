@@ -40,6 +40,7 @@ class TodosController extends Controller
     {
         $this->validate($request, [
             'title' => 'required',
+            'due' => 'required',
         ]);
 
         $todo = new Todo;
@@ -93,6 +94,7 @@ class TodosController extends Controller
     {
         $this->validate($request, [
             'title' => 'required',
+            'due' => 'required'
         ]);
 
         $todo = Todo::find($id);
